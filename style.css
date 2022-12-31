@@ -21,9 +21,17 @@ h2 {
 }
 
 #profile_picture {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
+    margin-right: 10px;
+    height: 80px;
+    width: 80px;
+}
+
+.inlined {
+  display: inline-block;
+}
+
+.circle {
+  border-radius: 80%;
 }
 
 .card-white {
@@ -68,6 +76,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+.vertically-centered {
+  display: flex;
+  align-items: center;
+}
+
 /* Custom design with class (99% of your design) */
 .container {
   width: 700px;
@@ -90,5 +103,8 @@ h2 {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+  }
+  h1 {
+    font-size: 36px;
   }
 }
