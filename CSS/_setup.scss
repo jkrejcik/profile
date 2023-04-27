@@ -1,0 +1,30 @@
+// Padding is calculated within a width
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+h1, h2, h3 {
+  font-family: $heading-font-family;
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 { font-size: $fs-h1; }
+h2 { font-size: $fs-h2; }
+h3 { font-size: $fs-h3; }
+
+body {
+  font-family: $body-font-family;
+  font-size: 1em;
+  margin: 0;
+  background-color: $clr-bg;
+  color: $clr-black;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
