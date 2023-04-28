@@ -8,31 +8,96 @@
 
 h1, h2, h3 {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
 }
 
 h3 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1em;
+  font-size: 1rem;
   margin: 0;
-  background-color: #f2b6a1;
-  color: #151515;
+  background-color: #151515;
+  color: #fff;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+section {
+  padding: 5em 1.5em;
+}
+
+.section-title {
+  margin-bottom: 0.25em;
+}
+
+.section-title-intro {
+  font-weight: 300;
+}
+.section-title-intro strong {
+  display: block;
+}
+
+.section-subtitle {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.section-subtitle-intro,
+.section-subtitle-about {
+  background-color: #88b9be;
+  margin-bottom: 1em;
+}
+
+nav {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: -moz-min-content;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-rows: auto 4em;
+    grid-template-areas: "img title" "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+  .intro img {
+    grid-area: img;
+    min-width: 300px;
+    position: relative;
+    border-radius: 5px;
+  }
+  .section-title-intro {
+    margin-top: 1em;
+    line-height: 1.2;
+  }
+  .section-subtitle-intro {
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    padding-top: 0.4em;
+    padding-right: 2.25em;
+    margin-bottom: 3em;
+    position: relative;
+    left: -2em;
+    width: calc(100% + 2em);
+    font-size: 1.75em;
+  }
 }/*# sourceMappingURL=style.css.map */
