@@ -1,11 +1,21 @@
-// Padding is calculated within a width
-*,
-*::before,
-*::after {
+// BASE SETUP
+* {
   box-sizing: border-box;
+  padding: 0;
 }
 
-// Typography
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
 
 h1, h2, h3 {
   font-family: $heading-font-family;
@@ -20,7 +30,7 @@ h3 { font-size: $fs-h3; }
 body {
   font-family: $body-font-family;
   font-size: $fs-p;
-  margin: 0;
+  margin: 0 0 3rem 0;
   background-color: $clr-black;
   color: $clr-white;
 }
@@ -29,4 +39,27 @@ img {
   display: block;
   max-width: 100%;
   box-shadow: $bs;
+  height: auto;
+}
+
+// Layout
+
+.container {
+  max-width: 768px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: $z-fixed;
+  background-color: $clr-black;
 }

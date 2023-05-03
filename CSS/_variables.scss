@@ -6,6 +6,7 @@ $heading-font-family: 'Montserrat', sans-serif;
 $body-font-family: 'Open Sans', sans-serif;
 
 $fw-reg: 300;
+$fw-med: 400;
 $fw-bold: 900;
 
 $fs-h1: 3rem;
@@ -23,3 +24,7 @@ $clr-white:#fff;
 // Background shadow
 $bs: 0.2em 0.2em 0.5em rgba(255, 255, 255, .25),
 0.125em 0.125em 0.25em rgba(255, 255, 255, .15);
+
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;

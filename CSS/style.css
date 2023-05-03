@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,500;1,600&display=swap");
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 h1, h2, h3 {
@@ -27,7 +39,7 @@ h3 {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  margin: 0;
+  margin: 0 0 3rem 0;
   background-color: #151515;
   color: #fff;
 }
@@ -36,6 +48,27 @@ img {
   display: block;
   max-width: 100%;
   box-shadow: 0.2em 0.2em 0.5em rgba(255, 255, 255, 0.25), 0.125em 0.125em 0.25em rgba(255, 255, 255, 0.15);
+  height: auto;
+}
+
+.container {
+  max-width: 768px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #151515;
 }
 
 section {
@@ -65,9 +98,82 @@ section {
 }
 
 nav {
-  display: none;
+  max-width: 968px;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
 }
 
+.nav__logo i {
+  font-size: 1.5rem;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: #f39057;
+  font-weight: 900;
+}
+
+.nav__logo:hover, .nav__toggle:hover {
+  color: white;
+}
+
+.nav__toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__list {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 400;
+}
+.nav__link i {
+  font-size: 1.5rem;
+}
+
+.nav__link:hover {
+  color: #f39057;
+}
+
+.nav__close {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 0.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.nav__close:hover {
+  color: #f39057;
+}
+
+.show-menu {
+  bottom: 0 !important;
+}
+
+@media screen and (max-width: 767px) {
+  .nav__menu {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: #151515;
+    padding: 2rem 1.5rem 4rem;
+    box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 1.5rem 1.5rem 0 0;
+    transition: 0.3s;
+  }
+}
 @media (min-width: 600px) {
   .intro {
     display: grid;

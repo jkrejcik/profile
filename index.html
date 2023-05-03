@@ -4,25 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Unicons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+
     <title>Jan Krejcik</title>
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img src="images/logo-no-background.png" alt="">
-      </div>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav>
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#skill" class="nav-link">Skills</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#work" class="nav-link">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-        </ul>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"><i class="uil uil-estate"></i></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item"><a href="#home" class="nav__link"><i class="uil uil-estate"></i> Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link"><i class="uil uil-user"></i> About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link"><i class="uil uil-file-alt"></i> Skills</a></li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link"><i class="uil uil-scenery"></i> Projects</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link"><i class="uil uil-message"></i> Contact</a></li>
+            <li class="nav__item"><a href="#resume" class="nav__link"><i class="uil uil-file-download"></i> Resume</a></li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -32,7 +44,7 @@
         Hi, I am <strong>JAN KREJCIK</strong>
       </h1>
       <p class="section-subtitle section-subtitle-intro">
-        Full-Stack Developer
+        Full Stack Developer
       </p>
       <img src="images/profile_intro.jpg" alt="a picture of Jan smiling">
     </section>
@@ -47,30 +59,34 @@
       <h2 class="section-title section-title-about">
         About Me
       </h2>
-      <p class="section-subtitle section-subtitle-about">
-        Full-Stack Web Developer with backround in sales
-      </p>
       <div class="about-me-body">
-        <p>Originally from Czech</p>
-        <p>Full Stack Web Developer</p>
-        <p>Learning to code!</p>
+        <p>Hi there! My name is Jan, and I'm originally from the Czech Republic. Currently, I'm based in the beautiful city of Barcelona, where I'm pursuing my passion for technology.
+        </p>
+        <p>After spending several years in sales and account management, I realised that I wanted to shift my career focus to technology. I've always been curious about how things work, and I wanted to gain a deeper understanding of the technology around me.
+        </p>
+        <p>I graduated from 6-month intensive bootcamp with Le Wagon where I gained expertise in web development and programming. I learned how to build full-stack web applications using Ruby on Rails, JavaScript, HTML and CSS. I also developed an understanding of programming concepts such as object-oriented programming, MVC architecture, and database design.</p>
+        <p>In my free time I love reading, playing footvolley, hiking and discovering new coffee places.</p>
       </div>
       <img src="images/profile_intro.jpg" alt="business style profile picture of Jan">
     </section>
 
     <!-- Projects -->
-    <section class="projects" id="work">
+    <!-- <section class="projects" id="work">
       <h2 class="section-title section-title-projects">
         Projects
       </h2>
-    </section>
+    </section> -->
 
     <!-- Footer -->
-    <footer>
+    <!-- <footer>
       <ul class="social-list">
         <li class="social-list-item"><a href="#" class="social-list-link">A</a></li>
         <li class="social-list-item"><a href="#" class="social-list-link">B</a></li>
       </ul>
-    </footer>
+    </footer> -->
+
+
+    <!-- Main JS -->
+    <script src="main.js"></script>
   </body>
 </html>
