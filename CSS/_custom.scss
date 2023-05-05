@@ -1,28 +1,5 @@
-section {
-  padding: 5em 1.5em;
-}
-
-.section-title {
-  margin-bottom: .25em;
-}
-
-.section-title-intro {
-  font-weight: $fw-reg;
-  strong {
-    display: block;
-
-  }
-}
-
-.section-subtitle {
-  margin: 0;
-  font-size: $fs-h3;
-}
-
-.section-subtitle-intro,
-.section-subtitle-about {
-  background-color: $clr-primary;
-  margin-bottom: 1em;
+.section {
+  padding: 2rem 0 4rem;
 }
 
 // Navigation bar
@@ -94,6 +71,91 @@ nav {
   bottom: 0 !important;
 }
 
+// Home
+.home__title {
+  font-weight: $fw-reg;
+  margin-bottom: 0.3rem;
+}
+
+.home__subtitle {
+  font-weight: $fw-med;
+  margin-top: 0.8rem;
+  color: $clr-primary;
+}
+
+.home__data {
+  margin-bottom: 4rem;
+  .button {
+    background-color: $clr-primary;
+    color: $clr-black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: $fw-bold;
+  }
+  .button__icon {
+    margin-left: .2rem;
+    transition: .3s;
+    font-size: 1.25rem;
+  }
+  // a:hover {
+
+  // }
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+.home__scroll {
+  display: none;
+  .home__scroll-mouse {
+    font-size: 2rem;
+    color: $clr-primary;
+  }
+  .home__scroll-button {
+    transition: .3s;
+  }
+  .home__scroll-button:hover {
+    transform: translateY(.25rem);
+  }
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.home__content {
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.home__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.home__social-icon {
+  font-size: $fs-h3;
+  color: $clr-secondary;
+}
+
+.home__social-icon:hover {
+  color: white;
+}
+
+.home__img {
+  width: 180px;
+  margin-left: 4rem;
+  img {
+    border-radius: 0.5rem;
+  }
+}
+
+
 // MOBILE
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -106,45 +168,5 @@ nav {
     box-shadow: 0 -1px 4px rgb(255, 255, 255, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
-  }
-}
-
-// Intro section
-
-@media (min-width: 600px) {
-  .intro {
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap: 1.5em;
-    grid-template-rows: auto 4em;
-    grid-template-areas:
-    "img title"
-    "img subtitle";
-    grid-template-columns: min-content max-content;
-
-    img {
-      grid-area: img;
-      min-width: 300px;
-      position: relative;
-      border-radius: 5px;
-    }
-  }
-  .section-title-intro {
-    margin-top: 1em;
-    line-height: 1.2;
-  }
-
-  .section-subtitle-intro {
-    grid-column: -1 / 1;
-    grid-row: 2;
-    text-align: right;
-    padding-top: 0.4em;
-    padding-right: 2.25em;
-    margin-bottom: 3em;
-    position: relative;
-    left: -2em;
-    width: calc(100% + 2em);
-    font-size: 1.75em;
   }
 }

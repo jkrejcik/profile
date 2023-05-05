@@ -8,6 +8,9 @@
     <!-- Unicons -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -38,16 +41,45 @@
       </nav>
     </header>
 
-    <!-- Introduction -->
-    <section class="intro" id="home">
-      <h1 class="section-title section-title-intro">
-        Hi, I am <strong>JAN KREJCIK</strong>
-      </h1>
-      <p class="section-subtitle section-subtitle-intro">
-        Full Stack Developer
-      </p>
-      <img src="images/profile_intro.jpg" alt="a picture of Jan smiling">
-    </section>
+    <!-- ================= MAIN ===================-->
+    <main class="main">
+      <section class="home section" id="home">
+        <div class="home__container container">
+          <div class="home__content">
+            <div class="home__social">
+              <a href="https://www.linkedin.com/in/jankrejcik1/" class="home__social-icon" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/jkrejcik" target="_blank" class="home__social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <img src="images/profile-removebg-preview.jpg" alt="" srcset="">
+            </div>
+          </div>
+
+          <div class="home__data">
+            <h2 class="home__title">Hi, I'am</h2>
+            <h1>Jan Krejcik</h1>
+            <h3 class="home__subtitle">Full Stack Developer</h3>
+            <p class="home__description">Web developer with a background in account management and sales.</p>
+            <a href="#contact" class="button button--flex">
+              Contact Me<i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Skills -->
     <section class="skills-list" id="skill">
@@ -55,7 +87,7 @@
     </section>
 
     <!-- About Me-->
-    <section class="about-me" id="about">
+    <!-- <section class="about-me" id="about">
       <h2 class="section-title section-title-about">
         About Me
       </h2>
@@ -68,7 +100,7 @@
         <p>In my free time I love reading, playing footvolley, hiking and discovering new coffee places.</p>
       </div>
       <img src="images/profile_intro.jpg" alt="business style profile picture of Jan">
-    </section>
+    </section> -->
 
     <!-- Projects -->
     <!-- <section class="projects" id="work">
