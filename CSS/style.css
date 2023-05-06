@@ -72,7 +72,7 @@ img {
 }
 
 .section {
-  padding: 2rem 0 4rem;
+  padding: 7rem 0 4rem;
 }
 
 nav {
@@ -217,6 +217,10 @@ nav {
 }
 .home__img img {
   border-radius: 0.5rem;
+}
+
+.about h2 {
+  background-color: aqua;
 }
 
 @media screen and (max-width: 767px) {

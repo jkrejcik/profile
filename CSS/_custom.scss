@@ -1,5 +1,5 @@
 .section {
-  padding: 2rem 0 4rem;
+  padding: 7rem 0 4rem;
 }
 
 // Navigation bar
@@ -152,6 +152,13 @@ nav {
   margin-left: 4rem;
   img {
     border-radius: 0.5rem;
+  }
+}
+
+// About ME
+.about {
+  h2 {
+    background-color: aqua;
   }
 }
 
