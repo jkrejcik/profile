@@ -1,5 +1,9 @@
 .section {
-  padding: 7rem 0 4rem;
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  text-align: center;
 }
 
 // Navigation bar
@@ -156,11 +160,7 @@ nav {
 }
 
 // About ME
-.about {
-  h2 {
-    background-color: aqua;
-  }
-}
+
 
 
 // MOBILE
