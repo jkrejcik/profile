@@ -255,20 +255,36 @@ nav {
 .skills__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .skills__container .skills__title {
   margin-bottom: 1.5rem;
+  width: 33%;
 }
-.skills__container .skills__title i {
+.skills__container .skills__title i, .skills__container .skills__title .api-icon {
   font-size: 4rem;
   text-align: center;
   display: block;
+  margin-top: 0;
+}
+.skills__container .skills__title i:hover, .skills__container .skills__title .api-icon:hover {
+  color: #88b9be;
 }
 .skills__container .skills__title span {
   display: block;
   text-align: center;
   margin-top: 0.3rem;
+}
+.skills__container .skills__title .icon-small {
+  font-size: 3rem;
+}
+.skills__container .skills__title .icon-text-small {
+  margin-top: 1.3rem;
+}
+
+.section__subtitle {
+  font-weight: 300;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {

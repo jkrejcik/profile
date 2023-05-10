@@ -191,20 +191,38 @@ nav {
 .skills__container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   .skills__title {
     margin-bottom: 1.5rem;
-    i {
+    width: 33%;
+    i, .api-icon {
       font-size: 4rem;
       text-align: center;
       display: block;
+      margin-top: 0;
+    }
+    i:hover, .api-icon:hover {
+      color: $clr-primary;
     }
     span {
       display: block;
       text-align: center;
       margin-top: .3rem;
     }
+    .icon-small {
+      font-size: 3rem;
+    }
+    .icon-text-small {
+      margin-top: 1.3rem;
+    }
   }
+}
+
+// Projects
+
+.section__subtitle {
+  font-weight: $fw-reg;
+  text-align: center;
 }
 
 // MOBILE
