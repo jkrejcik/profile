@@ -287,6 +287,10 @@ nav {
   text-align: center;
 }
 
+.projects__content img {
+  box-shadow: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav__menu {
     position: fixed;
