@@ -1,5 +1,5 @@
 .section {
-  padding: 2rem 0 4rem;
+  padding: 2rem 0 2rem;
 }
 
 .section__title {
@@ -121,18 +121,8 @@ nav {
   align-items: center;
 }
 
-.home__scroll {
-  display: none;
-  .home__scroll-mouse {
-    font-size: 2rem;
-    color: $clr-primary;
-  }
-  .home__scroll-button {
-    transition: .3s;
-  }
-  .home__scroll-button:hover {
-    transform: translateY(.25rem);
-  }
+.button--flex:hover {
+  background-color: $clr-secondary;
 }
 
 .home__description {
@@ -226,14 +216,179 @@ nav {
 }
 
 .projects__content {
+  text-align: center;
+  margin-bottom: 1rem;
   img {
     box-shadow: none;
   }
 }
 
+.projects__skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li, span {
+    font-size: $fs-h2;
+    margin-right: .5rem;
+    width: 15%;
+  }
+}
 
-// MOBILE
-@media screen and (max-width: 767px) {
+.projects__links {
+  a {
+    color: $clr-secondary;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+// Contact Me
+.contact__container {
+  margin-top: 3rem;
+}
+
+.contact__information {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.contact__icon {
+  font-size: 2rem;
+  margin-right: .75rem;
+}
+
+.contact__title {
+  font-size: $fs-h3;
+  font-weight: $fw-med;
+}
+
+.contact__subtitle {
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.contact__content {
+  background-color: #c2eff4;
+  border-radius: .5rem;
+  padding: .75rem 1rem .25rem;
+}
+
+.contact__label {
+  color: $clr-black;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.contact__input {
+  width: 100%;
+  background-color: #c2eff4;
+  color: $clr-black;
+  font-family: $body-font-family;
+  font-size: $fs-p;
+  border: none;
+  outline: none;
+  padding: .25rem .5rem .5rem 0;
+}
+
+// Footer
+.footer {
+  padding-top: 2rem;
+  color: $clr-black;
+}
+
+.footer__container {
+  row-gap: 1.5rem;
+}
+
+.footer__bg {
+  background-color: $clr-primary;
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  margin-bottom: .25rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  a {
+    color: $clr-black;
+    font-weight: $fw-bold;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  color: $clr-black;
+  margin-right: 1.5rem;
+  a {
+    color: $clr-black;
+  }
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+// Scroll up
+.scrollup {
+  position: fixed;
+  right: 1.25rem;
+  bottom: -20%;
+  background-color: $clr-black;
+  opacity: .8;
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: $z-tooltip;
+  transition: .4s;
+}
+
+.scrollup:hover {
+  background-color: $clr-secondary;
+}
+
+.scrollup__icon {
+  font-size: 1.5rem;
+}
+
+// Show scroll up
+.show-scroll {
+  bottom: 5rem;
+}
+
+// Scroll bar
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #1f1f1f;
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .5rem;
+  background-color: $clr-primary;
+}
+
+/* ================ MEDIA QUERIES ================*/
+// For small devices (Max for iphone 14 Pro MAX)
+@media screen and (max-width: 428px) {
+  .projects__content {
+    h3 {
+      font-size: 1.75rem;
+    }
+    .projects__skills {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
+  }
+
   .nav__menu {
     position: fixed;
     bottom: -100%;

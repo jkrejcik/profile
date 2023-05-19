@@ -23,3 +23,14 @@ function linkAction(){
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*==================== Show scroll UP ====================*/
+const scrollUp = () => {
+  const scrollUpEl = document.getElementById('scroll-up')
+  if(this.scrollY >= 560) {
+    scrollUpEl.classList.add('show-scroll')
+  } else {
+    scrollUpEl.classList.remove('show-scroll')
+  }
+}
+window.addEventListener('scroll', scrollUp)
