@@ -34,3 +34,28 @@ const scrollUp = () => {
   }
 }
 window.addEventListener('scroll', scrollUp)
+
+/*==================== Sending email contact ====================*/
+const sendEmail = () => {
+  let params = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+
+  const serviceID = "service_6p5dce4";
+  const templateID = "template_z21ab04";
+
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((response) => {
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+    console.log(response);
+    alert("Your message was sent succesfully!");
+  })
+  .catch((err) => console.log(err));
+}
