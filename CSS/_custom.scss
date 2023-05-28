@@ -22,7 +22,7 @@
 
 nav {
   max-width: 968px;
-  height: 3rem;
+  height: $header-hight;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,6 +88,17 @@ nav {
 }
 
 // Home
+.home__container {
+  gap: 1rem;
+}
+
+.home__content {
+  grid-template-columns: .5fr 3fr;
+  padding-top: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+
 .home__title {
   font-weight: $fw-reg;
   margin-bottom: 0.3rem;
@@ -102,6 +113,38 @@ nav {
 .home__data {
   margin-bottom: 4rem;
 }
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+.home__social {
+  display: grid;
+  grid-template-columns: max-content;
+  row-gap: 1.5rem;
+}
+
+.home__social-icon {
+  font-size: $fs-h3;
+  color: $clr-primary;
+}
+
+.home__social-icon:hover {
+  color: white;
+}
+
+.home__img {
+  width: 180px;
+  img {
+    border-radius: 0.5rem;
+  }
+}
+
+.home__data {
+  grid-column: 1/3;
+}
+
+ // Button
 
 .button {
   background-color: $clr-primary;
@@ -125,39 +168,7 @@ nav {
   background-color: $clr-secondary;
 }
 
-.home__description {
-  margin-bottom: 2rem;
-}
 
-.home__content {
-  display: flex;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.home__social {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.home__social-icon {
-  font-size: $fs-h3;
-  color: $clr-secondary;
-}
-
-.home__social-icon:hover {
-  color: white;
-}
-
-.home__img {
-  width: 180px;
-  margin-left: 4rem;
-  img {
-    border-radius: 0.5rem;
-  }
-}
 
 // About ME
 .about__img {
@@ -168,7 +179,7 @@ nav {
 }
 
 .about__data {
-  text-align: center;
+  text-align: justify;
 }
 
 .about__buttons {
@@ -379,6 +390,15 @@ nav {
 /* ================ MEDIA QUERIES ================*/
 // For small devices (Max for iphone 14 Pro MAX)
 @media screen and (max-width: 428px) {
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .home__content {
+    grid-template-columns: .25fr 3fr;
+  }
+
   .projects__content {
     h3 {
       font-size: 1.75rem;
@@ -399,5 +419,89 @@ nav {
     box-shadow: 0 -1px 4px rgb(255, 255, 255, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
+  }
+}
+
+// For tablets
+@media screen and (min-width: 768px) {
+  .home__content {
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home__data {
+    padding-left: 2rem;
+    padding-top: 4rem;
+    grid-column: initial;
+  }
+
+  .home__img {
+    order: 1;
+    justify-self: center;
+    width: 230px;
+  }
+
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding: 6rem 0 2rem;
+  }
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
+
+  .header {
+    top: 0;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer__container {
+    padding: 0 2rem;
+  }
+
+  .nav {
+    height: calc($header-hight + 1.5rem);
+    column-gap: 1rem;
+  }
+  .nav__logo,
+  .nav__close,
+  .nav__toggle {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    column-gap: 2rem;
+    i {
+      display: none;
+    }
+  }
+  .nav__menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__container {
+    grid-template-columns: .4fr 1fr;
+    p {
+      text-align:justify;
+    }
+  }
+
+  .about__img {
+    width: 230px;
+  }
+
+  .lewagon__link {
+    text-decoration: underline;
+    color: $clr-primary;
   }
 }
