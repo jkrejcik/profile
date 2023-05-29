@@ -221,6 +221,12 @@ nav {
 
 // Projects
 
+.projects {
+  .section__subtitle {
+    margin-bottom: 2rem;
+  }
+}
+
 .section__subtitle {
   font-weight: $fw-reg;
   text-align: center;
@@ -559,6 +565,10 @@ nav {
   .projects__skills {
     flex-wrap: nowrap;
   }
+
+  .contact__form {
+    width: 430px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -620,5 +630,4 @@ nav {
   .contact__inputs {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }

@@ -279,6 +279,10 @@ nav {
   margin-top: 1.3rem;
 }
 
+.projects .section__subtitle {
+  margin-bottom: 2rem;
+}
+
 .section__subtitle {
   font-weight: 300;
   text-align: center;
@@ -578,6 +582,9 @@ nav {
   }
   .projects__skills {
     flex-wrap: nowrap;
+  }
+  .contact__form {
+    width: 430px;
   }
 }
 @media screen and (min-width: 1280px) {
