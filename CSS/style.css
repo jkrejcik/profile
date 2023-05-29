@@ -475,6 +475,9 @@ nav {
     padding-top: 4rem;
     grid-column: initial;
   }
+  .about__buttons {
+    justify-content: left;
+  }
   .home__img {
     order: 1;
     justify-self: center;
@@ -488,7 +491,7 @@ nav {
     margin: 0;
   }
   .section {
-    padding: 6rem 0 2rem;
+    padding: 4rem 0 2rem;
   }
   .section__subtitle {
     margin-bottom: 4rem;
@@ -498,8 +501,7 @@ nav {
     bottom: initial;
   }
   .header,
-  .main,
-  .footer__container {
+  .main {
     padding: 0 2rem;
   }
   .nav {
@@ -525,16 +527,106 @@ nav {
     margin-right: auto;
   }
   .about__container {
-    grid-template-columns: 0.4fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
   .about__container p {
-    text-align: justify;
+    text-align: initial;
   }
   .about__img {
-    width: 230px;
+    width: 350px;
+  }
+  .about__data {
+    margin-top: 2rem;
+  }
+  .about .section__title,
+  .skills .section__title, .contact .section__title {
+    margin-bottom: 3rem;
   }
   .lewagon__link {
     text-decoration: underline;
     color: #88b9be;
+  }
+  .footer__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .footer__bg {
+    padding: 0 2rem;
+    padding-top: 2rem;
+  }
+  .footer__links {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer__socials {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .footer__socials a {
+    display: block;
+  }
+  .footer__copy {
+    padding-bottom: 2rem;
+  }
+  .contact__container {
+    grid-template-columns: 35% 65%;
+  }
+  .projects__content h3 {
+    font-size: 2.25rem;
+    margin-top: 2rem;
+  }
+  .projects__skills {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1080px;
+  }
+  .home__img {
+    width: 300px;
+  }
+  .home__social {
+    transform: translateX(-3rem);
+  }
+  body {
+    font-size: 1.1rem;
+  }
+  .about__img {
+    margin-top: 2rem;
+  }
+  .grid {
+    gap: 2rem;
+  }
+  .skills__container .skills__title {
+    width: 25%;
+  }
+  .skills .section__title, .contact .section__title, .about .section__title {
+    margin-bottom: 4rem;
+  }
+  .projects__content {
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+  }
+  .venuefinder {
+    text-align: right;
+  }
+  .venuefinder img {
+    margin-top: 1.5rem;
+    order: 2;
+  }
+  .diceto {
+    margin-bottom: 4rem;
+    text-align: left;
+  }
+  .diceto img {
+    margin-top: 1.5rem;
+  }
+  .contact__form {
+    width: 670px;
+  }
+  .contact__inputs {
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
